@@ -88,9 +88,34 @@ button {
   }
 }
 
+.grid-container {
+  display: grid;
+  gap: 4rem;
+}
+
 .mid-section {
   margin: 10rem 0;
-  img {
-    width: 75px;
+  h1 {
+    margin-bottom: 1rem;
   }
+
+  .grid-item {
+    img {
+      margin-bottom: 2rem;
+      width: 75px;
+    }
+  }
+}
+.see-how {
+  position: relative;
+  p {
+    display: inline-block;
+  }
+  img {
+    position: relative;
+    width: 20px;
+    display: inline-block;
+    top: 5px;
+  }
+  border-bottom: 1px solid $cyan;
 }

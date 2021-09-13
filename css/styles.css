@@ -84,10 +84,36 @@ button p {
   width: auto;
 }
 
+.grid-container {
+  display: grid;
+  gap: 4rem;
+}
+
 .mid-section {
   margin: 10rem 0;
 }
 
-.mid-section img {
+.mid-section h1 {
+  margin-bottom: 1rem;
+}
+
+.mid-section .grid-item img {
+  margin-bottom: 2rem;
   width: 75px;
+}
+
+.see-how {
+  position: relative;
+  border-bottom: 1px solid #65e2d9;
+}
+
+.see-how p {
+  display: inline-block;
+}
+
+.see-how img {
+  position: relative;
+  width: 20px;
+  display: inline-block;
+  top: 5px;
 }
