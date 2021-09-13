@@ -1,12 +1,89 @@
 $main-background: hsl(218, 28%, 13%);
 $footer-background: hsl(216, 53%, 9%);
 $testimonials-background: hsl(219, 30%, 18%);
-
+$light-grey: #bbb8b8;
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.main {
-  background-color: $main-background;
+
+body {
+  font-family: "Raleway";
+  text-align: center;
+}
+main {
+  background-color: $testimonials-background;
+  padding: 20px;
+}
+p {
+  font-family: "Open Sans";
+  color: $light-grey;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+img {
+  width: 100%;
+}
+
+h1 {
+  color: white;
+}
+header.header {
+  background-color: $testimonials-background;
+
+  a {
+    text-decoration: none;
+    p {
+      color: $light-grey;
+    }
+  }
+  li {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+}
+
+.top-article {
+  h1 {
+    line-height: 1.8;
+    margin: 1.5rem 0;
+  }
+}
+
+// Reusable
+.flex-container {
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+button {
+  background: linear-gradient(to right, $cyan, $blue);
+  border: none;
+  cursor: pointer;
+  border-radius: 4rem;
+  padding: 12px;
+  width: 200px;
+  p {
+    color: white;
+    margin-bottom: 0;
+  }
+}
+// End of reusable
+
+.navbar {
+  img {
+    height: 40px;
+    width: auto;
+  }
 }

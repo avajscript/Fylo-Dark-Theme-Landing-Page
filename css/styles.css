@@ -4,6 +4,82 @@
   box-sizing: border-box;
 }
 
-.main {
-  background-color: #181f2a;
+body {
+  font-family: "Raleway";
+  text-align: center;
+}
+
+main {
+  background-color: #202a3c;
+  padding: 20px;
+}
+
+p {
+  font-family: "Open Sans";
+  color: #bbb8b8;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+header.header {
+  background-color: #202a3c;
+}
+
+header.header a {
+  text-decoration: none;
+}
+
+header.header a p {
+  color: #bbb8b8;
+}
+
+header.header li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.top-article h1 {
+  line-height: 1.8;
+  margin: 1.5rem 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+button {
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  border: none;
+  cursor: pointer;
+  border-radius: 4rem;
+  padding: 12px;
+  width: 200px;
+}
+
+button p {
+  color: white;
+  margin-bottom: 0;
+}
+
+.navbar img {
+  height: 40px;
+  width: auto;
 }
