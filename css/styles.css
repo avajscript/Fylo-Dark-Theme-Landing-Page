@@ -83,3 +83,11 @@ button p {
   height: 40px;
   width: auto;
 }
+
+.mid-section {
+  margin: 10rem 0;
+}
+
+.mid-section img {
+  width: 75px;
+}
