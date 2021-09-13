@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  background-color: #202a3c;
+  background-color: #181f2a;
   padding: 20px;
 }
 
@@ -19,6 +19,7 @@ p {
   color: #bbb8b8;
   font-weight: 300;
   margin-bottom: 2rem;
+  line-height: 1.8;
 }
 
 img {
@@ -27,10 +28,6 @@ img {
 
 h1 {
   color: white;
-}
-
-header.header {
-  background-color: #202a3c;
 }
 
 header.header a {
@@ -103,12 +100,14 @@ button p {
 }
 
 .see-how {
+  display: inline-block;
   position: relative;
   border-bottom: 1px solid #65e2d9;
 }
 
 .see-how p {
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .see-how img {
@@ -116,4 +115,103 @@ button p {
   width: 20px;
   display: inline-block;
   top: 5px;
+}
+
+.bottom-content {
+  text-align: left;
+}
+
+.testimonial-section.flex-container-hor {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.quotes {
+  position: absolute;
+  width: 30px;
+  top: -25px;
+  z-index: 1;
+  left: 5px;
+}
+
+.testimonial-section {
+  margin-top: 12rem;
+  position: relative;
+}
+
+.testimonial-section .sub-article {
+  background-color: #202a3c;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.testimonial-section .sub-article .flex-container {
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.testimonial-section .sub-article img {
+  width: 40px;
+  border-radius: 4rem;
+}
+
+.testimonial-section .sub-article p {
+  margin-bottom: 0;
+}
+
+.testimonial-section .sub-article .text {
+  flex: 1;
+  flex-basis: 70%;
+}
+
+.testimonial-section .sub-article .text p:nth-of-type(1) {
+  color: white;
+  font-weight: 700;
+}
+
+.testimonial-section .sub-article picture {
+  flex: 1;
+}
+
+footer.footer {
+  background-color: #0b1523;
+}
+
+.early-access-section {
+  border-radius: 0.5rem;
+  background-color: #1c2431;
+  padding: 3rem;
+}
+
+.early-access-section h1 {
+  margin-bottom: 1.6rem;
+}
+
+.early-access-section .flex-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.early-access-section input {
+  outline: none;
+  padding: 13px;
+  font-size: 14px;
+  border-radius: 4rem;
+  width: 100%;
+  height: 50px;
+}
+
+.early-access-section button {
+  height: 50px;
+  width: 100%;
+}
+
+.early-access-section input::placeholder {
+  color: lightgrey;
 }

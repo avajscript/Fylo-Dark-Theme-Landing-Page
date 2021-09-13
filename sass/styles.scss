@@ -1,6 +1,7 @@
 $main-background: hsl(218, 28%, 13%);
 $footer-background: hsl(216, 53%, 9%);
 $testimonials-background: hsl(219, 30%, 18%);
+$early-access-background: hsl(217, 28%, 15%);
 $light-grey: #bbb8b8;
 $cyan: hsl(176, 68%, 64%);
 $blue: hsl(198, 60%, 50%);
@@ -15,7 +16,7 @@ body {
   text-align: center;
 }
 main {
-  background-color: $testimonials-background;
+  background-color: $main-background;
   padding: 20px;
 }
 p {
@@ -23,6 +24,7 @@ p {
   color: $light-grey;
   font-weight: 300;
   margin-bottom: 2rem;
+  line-height: 1.8;
 }
 img {
   width: 100%;
@@ -32,8 +34,6 @@ h1 {
   color: white;
 }
 header.header {
-  background-color: $testimonials-background;
-
   a {
     text-decoration: none;
     p {
@@ -107,9 +107,11 @@ button {
   }
 }
 .see-how {
+  display: inline-block;
   position: relative;
   p {
     display: inline-block;
+    margin-bottom: 10px;
   }
   img {
     position: relative;
@@ -118,4 +120,91 @@ button {
     top: 5px;
   }
   border-bottom: 1px solid $cyan;
+}
+
+.bottom-content {
+  text-align: left;
+}
+.testimonial-section.flex-container-hor {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  flex-direction: column;
+}
+.quotes {
+  position: absolute;
+  width: 30px;
+  top: -25px;
+  z-index: 1;
+  left: 5px;
+}
+
+.testimonial-section {
+  margin-top: 12rem;
+  position: relative;
+  .sub-article {
+    background-color: $testimonials-background;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+
+    .flex-container {
+      margin-top: 2rem;
+      align-items: center;
+    }
+    img {
+      width: 40px;
+      border-radius: 4rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .text {
+      flex: 1;
+      flex-basis: 70%;
+      p:nth-of-type(1) {
+        color: white;
+        font-weight: 700;
+      }
+    }
+    picture {
+      flex: 1;
+    }
+  }
+}
+
+footer.footer {
+  background-color: $footer-background;
+}
+
+.early-access-section {
+  border-radius: 0.5rem;
+  background-color: $early-access-background;
+  padding: 3rem;
+  h1 {
+    margin-bottom: 1.6rem;
+  }
+  .flex-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input {
+    outline: none;
+    padding: 13px;
+    font-size: 14px;
+    border-radius: 4rem;
+    width: 100%;
+    height: 50px;
+  }
+  button {
+    height: 50px;
+    width: 100%;
+  }
+  input::placeholder {
+    color: lightgrey;
+  }
 }
