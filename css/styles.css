@@ -180,6 +180,11 @@ footer.footer {
   background-color: #0b1523;
 }
 
+footer.footer img {
+  height: 50px;
+  width: auto;
+}
+
 .early-access-section {
   border-radius: 0.5rem;
   background-color: #1c2431;

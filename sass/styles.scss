@@ -175,12 +175,17 @@ button {
 
 footer.footer {
   background-color: $footer-background;
+  img {
+    height: 50px;
+    width: auto;
+  }
 }
 
 .early-access-section {
   border-radius: 0.5rem;
   background-color: $early-access-background;
   padding: 3rem;
+
   h1 {
     margin-bottom: 1.6rem;
   }
