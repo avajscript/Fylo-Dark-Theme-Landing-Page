@@ -26,9 +26,6 @@ p {
   margin-bottom: 2rem;
   line-height: 1.8;
 }
-img {
-  width: 100%;
-}
 
 h1 {
   color: white;
@@ -43,6 +40,9 @@ header.header {
   li {
     display: inline-block;
     margin-left: 2rem;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -84,7 +84,7 @@ button {
 .navbar {
   img {
     height: 40px;
-    width: auto;
+    width: auto !important;
   }
 }
 
@@ -121,7 +121,9 @@ button {
   }
   border-bottom: 1px solid $cyan;
 }
-
+.width-100 {
+  width: 100%;
+}
 .bottom-content {
   text-align: left;
 }
@@ -172,12 +174,88 @@ button {
     }
   }
 }
+.flex-wrapper {
+  li {
+    display: flex;
+
+    picture {
+      flex: 1;
+      flex-basis: 5%;
+    }
+    p {
+      flex: 1;
+      flex-basis: 90%;
+    }
+  }
+}
 
 footer.footer {
+  position: relative;
+  text-align: left;
+  padding: 1rem;
   background-color: $footer-background;
-  img {
-    height: 50px;
-    width: auto;
+
+  #logo {
+    height: 30px;
+    margin-bottom: 2rem;
+  }
+  p {
+    color: white;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    &:hover p {
+      text-decoration: underline;
+    }
+  }
+  .flex-wrapper {
+    li {
+      display: flex;
+
+      picture {
+        flex: 1;
+        flex-basis: 5%;
+      }
+      p {
+        flex: 1;
+        flex-basis: 90%;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .icon-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .icon {
+    position: relative;
+    border: 1px solid white;
+    border-radius: 4rem;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin: 0 5px;
+    &:hover {
+      border: 1px solid hsl(322, 100%, 66%);
+      & i {
+        color: hsl(322, 100%, 66%);
+      }
+    }
+  }
+  i {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
   }
 }
 
@@ -185,6 +263,7 @@ footer.footer {
   border-radius: 0.5rem;
   background-color: $early-access-background;
   padding: 3rem;
+  margin-bottom: 5rem;
 
   h1 {
     margin-bottom: 1.6rem;
@@ -211,5 +290,20 @@ footer.footer {
   }
   input::placeholder {
     color: lightgrey;
+  }
+}
+
+@media only screen and (min-width: 1052px) {
+  main {
+    padding: 3rem;
+  }
+  .center-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.header {
+    h1 {
+      font-size: 2.2rem;
+    }
   }
 }

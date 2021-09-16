@@ -12,16 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/f870c7346d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
     <main>
+      
       <header class="header">
         <div class="navbar">
           <div class="flex-container">
-            <div class="flex">
+            <div class="">
               <img src="./images/logo.svg" alt="fylo logo" />
             </div>
             <div class="flex-right">
@@ -41,6 +46,7 @@
           <!-- End of flex container-->
         </div>
         <!-- End of navbar-->
+        <div class="center-content">
         <article class="top-article">
           <img
             src="./images/illustration-intro.png"
@@ -112,10 +118,16 @@
           <!-- End of grid item-->
         </div>
         <!-- End of grid container-->
+        </div>
+        <!-- End of center content -->
         <div class="bottom-content">
           <div class="flex-container-horizontal">
             <div class="flex">
-              <img src="./images/illustration-stay-productive.png" alt="" />
+              <img
+                class="width-100"
+                src="./images/illustration-stay-productive.png"
+                alt=""
+              />
             </div>
             <div class="flex">
               <h1>Stay productive, wherever you are</h1>
@@ -219,36 +231,93 @@
       </section>
       <!-- End of middle section -->
 
-      <footer class="footer">
-        <div class="early-access-section">
-          <h1>Get early access today</h1>
-          <p>
-            It only takes a mintue to sign up and our free start tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-          <div class="flex-container">
-            <div class="flex">
-              <input type="email" placeholder="email@example.com" />
-            </div>
-            <div class="flex">
-              <button>
-                <p>Get Started For Free</p>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- End of early access section -->
-        <img src="./images/logo.svg" alt="" />
-        <div class="grid-container">
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-        </div>
-      </footer>
       <!-- End of mid section -->
     </main>
     <!-- End of main-->
+    <footer class="footer">
+      <div class="early-access-section">
+        <h1>Get early access today</h1>
+        <p>
+          It only takes a mintue to sign up and our free start tier is extremely
+          generous. If you have any questions, our support team would be happy
+          to help you.
+        </p>
+        <div class="flex-container">
+          <div class="flex">
+            <input type="email" placeholder="email@example.com" />
+          </div>
+          <div class="flex">
+            <button>
+              <p>Get Started For Free</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <img src="./images/logo.svg" alt="fylo " />
+      <div class="grid-container">
+        <div class="grid-item">
+          <ul class="flex-wrapper">
+            <li>
+              <picture>
+                <img src="./images/icon-location.svg" alt=" location icon" />
+              </picture>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                libero ipsum eveniet voluptatum. Nisi totam possimus inventore
+                magnam dignissimos.
+              </p>
+            </li>
+            <li>
+              <picture>
+                <img src="./images/icon-phone.svg" alt="cell phone icon" />
+              </picture>
+              <p>+1-543-123-4567</p>
+            </li>
+            <li>
+              <picture>
+                <img src="./images/icon-email.svg" alt="email icon white" />
+              </picture>
+              <p>example@huddle.com</p>
+            </li>
+          </ul>
+        </div>
+        <!-- End of grid item-->
+        <div class="grid-item">
+          <ul>
+            <li>
+              <a href="#"><p>About us</p></a>
+            </li>
+            <li>
+              <a href="#"><p>What We Do</p></a>
+            </li>
+            <li>
+              <a href="#"><p>FAQ</p></a>
+            </li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <ul>
+            <li>
+              <a href="#"><p>Career</p></a>
+            </li>
+            <li>
+              <a href="#"><p>Blog</p></a>
+            </li>
+            <li>
+              <a href="#"><p>Contact Us</p></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid-item">
+          <div class="icon-container">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+          </div>
+        </div>
+      </div>
+      <!-- End of grid container -->
+    </footer>
   </body>
 </html>

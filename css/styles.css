@@ -22,10 +22,6 @@ p {
   line-height: 1.8;
 }
 
-img {
-  width: 100%;
-}
-
 h1 {
   color: white;
 }
@@ -41,6 +37,10 @@ header.header a p {
 header.header li {
   display: inline-block;
   margin-left: 2rem;
+}
+
+header.header img {
+  width: 100%;
 }
 
 .top-article h1 {
@@ -78,7 +78,7 @@ button p {
 
 .navbar img {
   height: 40px;
-  width: auto;
+  width: auto !important;
 }
 
 .grid-container {
@@ -115,6 +115,10 @@ button p {
   width: 20px;
   display: inline-block;
   top: 5px;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .bottom-content {
@@ -176,19 +180,105 @@ button p {
   flex: 1;
 }
 
+.flex-wrapper li {
+  display: flex;
+}
+
+.flex-wrapper li picture {
+  flex: 1;
+  flex-basis: 5%;
+}
+
+.flex-wrapper li p {
+  flex: 1;
+  flex-basis: 90%;
+}
+
 footer.footer {
+  position: relative;
+  text-align: left;
+  padding: 1rem;
   background-color: #0b1523;
 }
 
-footer.footer img {
-  height: 50px;
-  width: auto;
+footer.footer #logo {
+  height: 30px;
+  margin-bottom: 2rem;
+}
+
+footer.footer p {
+  color: white;
+}
+
+footer.footer ul {
+  list-style: none;
+}
+
+footer.footer li {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+footer.footer li:hover p {
+  text-decoration: underline;
+}
+
+footer.footer .flex-wrapper li {
+  display: flex;
+}
+
+footer.footer .flex-wrapper li picture {
+  flex: 1;
+  flex-basis: 5%;
+}
+
+footer.footer .flex-wrapper li p {
+  flex: 1;
+  flex-basis: 90%;
+}
+
+footer.footer a {
+  text-decoration: none;
+}
+
+footer.footer .icon-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer.footer .icon {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 4rem;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+footer.footer .icon:hover {
+  border: 1px solid #ff52bf;
+}
+
+footer.footer .icon:hover i {
+  color: #ff52bf;
+}
+
+footer.footer i {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .early-access-section {
   border-radius: 0.5rem;
   background-color: #1c2431;
   padding: 3rem;
+  margin-bottom: 5rem;
 }
 
 .early-access-section h1 {
@@ -219,4 +309,17 @@ footer.footer img {
 
 .early-access-section input::placeholder {
   color: lightgrey;
+}
+
+@media only screen and (min-width: 1052px) {
+  main {
+    padding: 3rem;
+  }
+  .center-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header.header h1 {
+    font-size: 2.2rem;
+  }
 }
