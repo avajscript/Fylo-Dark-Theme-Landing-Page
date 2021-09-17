@@ -5,6 +5,7 @@ $early-access-background: hsl(217, 28%, 15%);
 $light-grey: #bbb8b8;
 $cyan: hsl(176, 68%, 64%);
 $blue: hsl(198, 60%, 50%);
+$max-width: 800px;
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +79,9 @@ button {
     color: white;
     margin-bottom: 0;
   }
+  &:hover {
+    background: hsl(176, 68%, 75%);
+  }
 }
 // End of reusable
 
@@ -85,6 +89,12 @@ button {
   img {
     height: 40px;
     width: auto !important;
+  }
+  li {
+    &:hover a p {
+      color: white;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -102,7 +112,7 @@ button {
   .grid-item {
     img {
       margin-bottom: 2rem;
-      width: 75px;
+      height: 75px;
     }
   }
 }
@@ -120,6 +130,9 @@ button {
     top: 5px;
   }
   border-bottom: 1px solid $cyan;
+  &:hover {
+    border-bottom: 1px solid white;
+  }
 }
 .width-100 {
   width: 100%;
@@ -144,11 +157,15 @@ button {
 .testimonial-section {
   margin-top: 12rem;
   position: relative;
+  width: 90%;
+  margin: 12rem auto 0;
+
   .sub-article {
     background-color: $testimonials-background;
     padding: 2rem;
     border-radius: 0.5rem;
     position: relative;
+    margin-bottom: 2rem;
 
     .flex-container {
       margin-top: 2rem;
@@ -187,6 +204,9 @@ button {
       flex-basis: 90%;
     }
   }
+}
+.logo {
+  margin-bottom: 2rem;
 }
 
 footer.footer {
@@ -296,14 +316,84 @@ footer.footer {
 @media only screen and (min-width: 1052px) {
   main {
     padding: 3rem;
+    padding-bottom: 10rem;
   }
   .center-content {
-    max-width: 800px;
+    max-width: $max-width;
     margin: 0 auto;
   }
   header.header {
     h1 {
       font-size: 2.2rem;
     }
+  }
+  .mid-section {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4rem;
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+  }
+  .flex-container-horizontal {
+    display: flex;
+  }
+  .flex-vertical-center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+  footer.footer {
+    position: relative;
+  }
+
+  .early-access-section {
+    text-align: center;
+    max-width: $max-width;
+    margin: 0 auto;
+    position: relative;
+    top: -175px;
+    .flex-container {
+      flex-direction: row;
+      .flex {
+        &:nth-of-type(1) {
+          flex-basis: 75%;
+        }
+        &:nth-of-type(1) {
+          flex-basis: 25%;
+        }
+      }
+    }
+  }
+  footer.footer {
+    padding: 0 7rem 7rem;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    }
+    .flex-wrapper {
+      picture {
+        img {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .grid-item:nth-of-type(1) {
+    li:nth-of-type(1) {
+      margin-right: 6rem;
+    }
+  }
+  .testimonial-section {
+    width: 100%;
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 }
